@@ -44,4 +44,10 @@ int main()
             std::cout << "Answer: " << answerKey[i] << '\n';
         }
     }
+    std::cout << "******************\n";
+    std::cout << "*    Results\n   *";
+    std::cout << "******************\n";
+    std::cout << "Correct guesses: " << score << '\n';
+    std::cout << "# of questions: " << size << '\n';
+    std::cout << "Score: " << (score / (double)size) * 100 << "%";
 }
