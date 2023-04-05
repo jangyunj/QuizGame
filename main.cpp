@@ -29,5 +29,19 @@ int main()
         {
             std::cout << options[i][j] << '\n';
         }
+
+        std::cin >> guess;
+        guess = toupper(guess);
+
+        if (guess == answerKey[i])
+        {
+            std::cout << "Correct!\n";
+            score++;
+        }
+        else
+        {
+            std::cout << "Wrong :(\n";
+            std::cout << "Answer: " << answerKey[i] << '\n';
+        }
     }
 }
